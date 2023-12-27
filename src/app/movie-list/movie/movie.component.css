@@ -1,0 +1,27 @@
+.movie{
+  width: 260px;
+  background-color: #fffafa;
+  padding: 0px 10px 5px 10px;
+  height: 500px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie:hover {
+  box-shadow: 0 0 3px #515151;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.movie img {
+  width: 255px;
+}
+
+.release_date {
+  display: flex;
+  justify-content: flex-end;
+}

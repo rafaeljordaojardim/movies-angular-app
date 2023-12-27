@@ -1,0 +1,14 @@
+<div class="container"  *ngIf="movies.length; else noFavorites">
+  <h3>Favorites</h3>
+  <div class="favorites">
+    <div class="movie" *ngFor="let movie of movies">
+      <app-movie [movieItem]="movie" [staticCard]="true"></app-movie>
+      <div (click)="remove(movie.id)" class="remove">X</div>
+    </div>
+  </div>
+</div>
+
+<ng-template #noFavorites>
+  <h3>No Favorite Movies</h3>
+</ng-template>
+

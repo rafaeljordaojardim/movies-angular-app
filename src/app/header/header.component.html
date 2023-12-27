@@ -1,0 +1,14 @@
+<div class="header">
+
+    <h2>Movies App</h2>
+
+  <app-search [disabled]="!isLoggedIn()"></app-search>
+  <div class="links">
+    <a (click)="handleLogInOut()">{{ isLoggedIn() ? 'Logout' : 'Login' }}</a>
+    <a [routerLink]="['/movies']">Movies</a>
+    <a [routerLink]="['/favorites']">Favorites</a>
+  </div>
+
+
+  
+</div>

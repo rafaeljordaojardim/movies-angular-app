@@ -1,0 +1,9 @@
+<div class="movie-detail">
+  <h2>{{movieSelected.title}}</h2>
+  <img src="https://image.tmdb.org/t/p/original{{movieSelected.imagePath}}" alt="">
+  <div class="release_date">
+    <span>Release date: {{movieSelected.releaseDate}}</span>
+  </div>
+  <p>{{movieSelected.overview}}</p>
+  <button  [disabled]="isFavorited" (click)="onAddFavorites()">{{isFavorited? 'Added' : 'Add'}} to favorites</button>
+</div>

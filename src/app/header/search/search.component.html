@@ -1,0 +1,11 @@
+<div class="search">
+  <div class="input">
+    <input type="text" #inputSearch [disabled]="disabled">
+    <button (click)="searchMovies()">search</button>
+  </div>
+  <div class="pagination" *ngIf="searchResult">
+    <a *ngFor="let page of getArrayOfPages()"
+      (click)="moveToPage(page)"
+    >{{page}}</a>
+  </div>
+</div>

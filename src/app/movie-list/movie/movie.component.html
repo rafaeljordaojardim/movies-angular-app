@@ -1,0 +1,8 @@
+<div class="movie" (click)="onMovieClick()">
+  <img src="https://image.tmdb.org/t/p/original{{movie.imagePath}}" alt="">
+  <div class="release_date">
+    <span>Release date: {{movie.releaseDate}}</span>
+  </div>
+  <h3>{{movie.title}}</h3>
+  <p>{{movie.overview}}</p>
+</div>
